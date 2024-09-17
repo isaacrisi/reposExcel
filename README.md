@@ -1,12 +1,8 @@
 ## código de la macro de suma
 
 Sub CalcularSuma()
-'
 ' CalcularSuma Macro
 ' Macro que calcula la suma a partir de variables
-'
-
-'
 
 Dim n1, n2, suma As Integer
 n1 = Val(InputBox("Ingrese el primer numero"))
@@ -35,6 +31,8 @@ Sheets("suma").Cells(4, 2).Value = Clear
 
 
 End Sub
+## insertar filas 
+
 Sub MacroInsertarFila()
 '
 ' MacroInsertarFila Macro
@@ -48,6 +46,8 @@ Sub MacroInsertarFila()
     Selection.Insert Shift:=xlDown
     Sheets("Suma").Select
 End Sub
+## primera forma de guardar
+
 Sub MacroGuardar1()
 '
 ' MacroGuardar1 Macro
@@ -68,6 +68,8 @@ Sub MacroGuardar1()
     Sheets("Suma").Select
     Range("B2").Select
 End Sub
+## unir macros
+
 Sub GuardarSuma()
 '
 ' GuardarSuma Macro
@@ -81,6 +83,8 @@ Limpiar
 
 
 End Sub
+## unir macros
+
 Sub GuardarSuma2()
 '
 ' GuardarSuma2 Macro
@@ -91,6 +95,8 @@ MacroGuardar2
 Limpiar
 
 End Sub
+## Referencias relativas
+
 Sub MacroGuardar2()
 '
 ' MacroGuardar2 Macro
